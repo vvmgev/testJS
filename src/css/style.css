@@ -1,0 +1,337 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+
+
+*{
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;  
+  font: normal 1em 'Roboto' sans-serif;
+}
+
+.calendar{
+  width: 700px;  
+  height: 400px;
+  background: #EAEAEA;
+  position: relative;
+  margin: 0 auto;
+}
+
+.datetime-panel{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: white;
+    font-size: 40px;
+    z-index: 2;
+    background: #333;
+}
+
+.datetime-panel-graph{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    color: white;
+    font-size: 40px;
+    z-index: 1;
+    background: #333;
+}
+
+.temperature-panel{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    color: #333;
+    font-size: 40px;
+    z-index: 2;
+    background: #EAEAEA;
+}
+.temperature-panel-graph{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #333;
+    font-size: 40px;
+    z-index: 1;
+    background: #EAEAEA;
+}
+
+.date-select-panel{
+  float:left;
+  width: 60px;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.day-panel-status{
+  text-align: center;
+}
+.date-item{
+    height: 60px;
+    border-bottom: 1px solid white;
+    color: white;
+    text-align: center;
+    font-size: 34px;
+}
+
+.active{
+   background: #E73535;
+}
+
+.time-panel{
+  float:left;
+  width: 85%;
+  height: 100%;
+}
+
+.time-panel-month-row{
+  height: 60px;
+}
+
+.time-panel-month
+{
+  padding-left: 15px;
+  float: left;
+  color: white;
+  font-size: 20px;
+  line-height: 60px;
+}
+
+.time-panel-count
+{
+  text-align: center;
+  float: right;
+  color: lightgray;
+  margin-top: 10px;
+  margin-right: 20px;
+  line-height: 35px;
+  height: 40px;
+  width: 40px;
+  border: 3px solid #515151;
+  border-radius: 40px;
+  font-size: 0.6em;
+}
+
+.time-panel-time-wrapper{
+  height: 60%;
+  display: table;
+  width: 100%;
+}
+
+.time-panel-time{
+  text-align: center;
+  display: table-cell;
+  font-size: 80px;
+  color: white;
+  vertical-align: middle;
+}
+
+.time-panel-button{
+  float: right;
+  background: white;
+  width: 60px;
+  height: 60px;
+  background: #E9E9E9;
+  cursor: pointer;
+}
+
+.temperature-panel-button{
+  float:left;
+  background: #333333;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.temperature-panel-city{
+  font-size: 0.5em;
+  color: #333333;
+  font-weight: 600;
+  width: 250px;
+  padding-top: 10px;
+  text-transform: uppercase;
+  border-top: 6px solid #E73535;
+}
+
+.temperature-panel-fulldate{
+    font-size: 0.5em;
+    color: #888;
+}
+
+.temperature-panel-icon{
+  margin-top: 20px;
+  background: url('https://cdn3.iconfinder.com/data/icons/weather-and-forecast/50/Weather_icons_grey-02-256.png') no-repeat center;
+  background-size: contain;
+  height: 45%;
+  width: 100%;
+}
+
+.temperature-value{
+  width: 50%;
+  float: left;
+  color: #333333;
+  text-align: center;
+  height: 80px;
+  font-size: 70px;
+
+}
+
+.temperature-value:after{
+  content:'o';
+  position: relative;
+  top: -40px;
+  font-size: 35px;
+}
+
+.temperature-value:before{
+  content:'c';
+  position: relative;
+  top: -30px;
+  left: 115px;
+  font-size: 40px;
+  color: #808080;
+}
+
+.menu {
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 30px;
+  height: 23px;
+}
+.menu .center {
+    width: 100%;
+    height: 5px;
+    background: #808080;
+    margin: 4px auto;
+}
+.menu:before, .menu:after {
+    height: 5px;
+    content: "";
+    display: block;
+    background: #808080;
+}
+
+#temperatureLow{
+  float: left;
+  margin-left: 100px;
+}
+
+#temperatureHigh{
+  float: right;
+  margin-right: 80px;
+}
+
+
+#clear{
+  clear: both;
+}
+
+.weekDay{
+  font-size: 10px;
+  line-height: initial;
+  margin-top: 10px;
+}
+
+#dayStatusImg{
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin-left: 20px; 
+}
+
+
+/****************************************/
+
+
+.droplink {
+  width: 140px;
+  position:absolute;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+}
+
+.droplink ul, .droplink h3, .droplink h3 a{
+  padding: 0px;
+  margin: 0px;
+}
+
+.droplink:hover {
+  height: auto;
+  background-color: #3E403D;
+  border: solid 1px #3A3C39;
+}
+
+.droplink h3 a {
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding: 12px 0px;
+  color: #333;
+  letter-spacing: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.droplink h3 a img{
+  border: none; 
+}
+
+.droplink:hover h3 a {
+  color: #FFF;
+  font-weight: bold;
+}
+
+.droplink:hover h3 a {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+}
+
+.droplink ul{
+  list-style: none; 
+  display: none;
+}
+
+.droplink:hover ul{
+  display: block;
+  margin-top: 40px;
+}
+
+.droplink li{
+  display: block;
+}
+
+.droplink li a{
+  padding: 5px 12px 4px 12px; 
+  margin: 1px;
+  background-color: #484A47;
+  display: block;
+  color:#FFF;
+  text-decoration: none;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+}
+
+.droplink li a:hover {
+  background-color: #CC3B1F;  
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+	
+
+
+
+	<div class="droplink">
+	    <h3><a href="#">Cities</a></h3>
+	    <ul id="citiesUl">
+	      <li><a href="#" data-city="yerevan">Yerevan</a></li>
+	      <li><a href="#" data-city="ashtarak">Ashtarak</a></li>
+	      <li><a href="#" data-city="artashat">Artashat</a></li>
+	      <li><a href="#" data-city="echmiadzin">Echmiadzin</a></li>
+	      <li><a href="#" data-city=""></a></li>
+	    </ul>
+	</div>
+	
+
+
+	<div class="calendar">
+
+
+
+
+	  <div class="datetime-panel">
+	      <div class="date-select-panel" id="calendar">
+
+	      </div>
+	    <div class="time-panel">
+			<div class="time-panel-month-row">
+			  <div class="time-panel-month" id="month" ></div>
+			  <div class="time-panel-month time-panel-year" id="year" ></div>
+			  <div class="time-panel-month time-panel-city" id="city" ></div>
+			  <div class="time-panel-count" id="monthCount"></div>
+			</div>
+
+			<div class="day-panel-status">
+				<p id="dayStatus">Status</p>
+			</div>
+
+
+			<div class="day-panel-temperature">
+
+	  			<p id="temperatureLow">
+	  				<span class="temperature" id="temperatureLowSpan">0</span>
+	  				<sup>&deg;C<sup>
+  				</p>
+  				<p>
+  					<img src="./src/img/Sunny.png" id="dayStatusImg" alt="">
+				</p>
+	  			<p id="temperatureHigh">
+	  				<span class="temperature" id="temperatureHighSpan">0</span>
+	  				<sup>&deg;C<sup>
+  				</p>
+				<p id="clear"></p>
+				
+			</div>
+
+	    </div>
+	  </div>
+
+	  <div class="temperature-panel-graph">
+	  </div>
+
+
+
+
+  </div>
+
+	  
+
+
+
+
+
+
+	<script src="bundle.js" ></script>
+</body>
+</html>
